@@ -1,0 +1,17 @@
+<app-nav-bar></app-nav-bar>
+
+<div class="container">
+
+    <div class="row" *ngFor="let i of tickets">
+       <table *ngIf="i.Status != 'Cacnceled'">
+           <tr><td>Ticket number:</td><td>{{i.Id}}</td><td></td></tr>
+           <tr><td>Performance:</td><td>{{i.Session?.Performance?.Name}}</td><td></td></tr>
+           <tr><td>Date:</td><td>{{i.Session?.Date}}</td><td></td></tr>
+           <tr><td>Seat number:</td><td>{{i.Seat?.SeatNumber}}</td><td><button type="submit" (click)="BuyTicket(i.Id)" *ngIf="i.Status === 'Booked'">Buy ticket</button></td></tr>
+           <tr><td>Row number:</td><td>{{i.Seat?.RowNumber}}</td><td><button type="submit" (click)="CancelTicket(i.Id)" *ngIf="i.Status === 'Booked'">Cancel booking</button></td></tr>
+           <tr><td>Price:</td><td>{{i.Price}}</td><td></td></tr>
+           <tr><td>Status:</td><td>{{i.Status}}</td><td></td></tr>
+       </table>
+    </div>
+
+</div>

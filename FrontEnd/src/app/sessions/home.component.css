@@ -1,0 +1,89 @@
+.container{
+  
+    background-color: white;
+}
+.navbar 
+{
+    font-size: 30xp;
+    background-color: blueviolet;
+    padding-left: 20%;
+    height: 30%;
+}
+.nav-tab{
+    color:white;
+    font-size: 30px;
+    padding : 15px;
+    cursor:pointer;
+}
+
+
+.card-img-top
+{
+width: 100%;
+height: 100%;
+}
+.card-background
+{
+    background-color: blueviolet;
+    width: 43%;
+    margin-left: 15%;
+}
+.card-text
+{
+    color:white;
+    padding-left: 5%;
+
+}
+.card-title
+{
+    font-size: 36px;
+    color:white;
+    padding-left: 5%;
+    margin-bottom: 12%;
+}
+.black{
+    color:black;
+}
+.inner-text
+{
+    color:white;
+    
+}
+.card-body
+{
+    background-color: blueviolet;
+    
+}
+.row
+{
+    margin-top:3%;
+}
+
+.col-6
+{
+    padding: 0;
+}
+
+.col-5
+{
+    padding: 0%;
+}
+.col-2
+{
+    background-color: blueviolet;
+}
+.date
+{
+    margin-top: 50%;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+}
+.MyBtn
+{
+    margin-top :3%;
+}
+
+.btntick{
+    text-align: center;
+}

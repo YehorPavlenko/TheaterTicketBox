@@ -1,0 +1,23 @@
+<div class="container">
+    <form>
+        <div class="group">
+          <label >Date</label>
+          <input type="text" name = "Date" [(ngModel)]="session.Date">
+        </div>
+        <div class="group">
+                Name of hall
+          <select name="Hall" [(ngModel)]="session.HallId">
+               <option  *ngFor = "let hall of halls" [value]="hall.Id"  >{{hall.Name}}</option>
+          </select>
+        </div>
+        <div class="group">
+            Name of performce
+                <select  name="Performance" [(ngModel)]="session.PerformanceId">
+                    <option *ngFor = "let perf of performances" [value]="perf.Id" >{{perf.Name}}</option>
+                </select>
+              </div>
+              <div class="mybutton">
+                    <button class="mybutton"  type="submit" (click)="CreateSession()">Add</button>
+                </div>
+      </form>
+</div>

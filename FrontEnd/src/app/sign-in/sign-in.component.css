@@ -1,0 +1,44 @@
+.container{
+    font-family: 'Times New Roman';
+    font-size:  16px;
+    width: 30%;
+    background: blueviolet;
+    margin: 0 auto;
+    border-radius: 20px/20px;
+}
+
+h1{
+    padding-bottom:  5px;
+    border-bottom: 3px solid purple;
+}
+form{
+    margin: 0 auto;
+    width: 450px;
+    padding: 20px;
+}
+
+.group{
+   margin :2px;
+   padding: 2px;;
+}
+input{
+    margin-top: 5px;
+    height: 30px;
+    width: 400px;
+    border-radius: 20px/20px;
+}
+.mybutton
+{
+    text-align: center;
+    margin-top: -20px;
+    cursor:pointer;
+}
+.ref
+{
+    cursor:pointer;
+    text-align: center;
+    margin-top: 3px;
+}
+a{
+    color: black;
+}

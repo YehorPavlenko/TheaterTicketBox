@@ -1,0 +1,30 @@
+<app-nav-bar></app-nav-bar>
+
+<div class="container">
+
+   
+            <div class="row" *ngFor="let i of seats">
+               <div  class="col text-center" *ngFor ="let j of i" [ngSwitch]="j.Status">
+                    <div class="number"    (click) = "ChooseTicket(j.Id)" *ngSwitchCase="'Free'"  clickColor color='lightgreen'>
+                       {{j.Seat.SeatNumber}}
+                    </div>
+               <div class="number" style="background-color: yellow;" *ngSwitchCase="'Booked'">
+                     {{j.Seat.SeatNumber}}
+                  </div>
+                  <div class="number" style="background-color: yellow;" *ngSwitchCase="'Booking'">
+                     {{j.Seat.SeatNumber}}
+                  </div>
+                    <div class="number" style="background-color: red;" *ngSwitchCase="'Bought'">
+                     {{j.Seat.SeatNumber}}
+               </div>
+              </div>
+            </div>
+
+            <h1>Price: {{price}}</h1> 
+           <div class="mybutton">
+            <button class = "MyBtn" type="submit" (click)="BuyTickets()">Buy tickets</button>
+            <button class= "MyBtn" type="submit" (click)="BookTickets()">Book tickets</button>
+         </div>
+    </div>
+   
+

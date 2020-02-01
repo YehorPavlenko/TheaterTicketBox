@@ -1,0 +1,23 @@
+<div class="container">
+  <form>
+    <div class="group">
+      <label >Name</label>
+      <input type="text" name = "Name"   [(ngModel)]="performance.Name">
+    </div>
+    <div class="group">
+      <label >Author</label>
+      <input type="text" name="Author" [(ngModel)]="performance.Author" >
+    </div>
+    <div class="group">
+      <label>Director</label>
+      <input type="text" name="Director" [(ngModel)]="performance.Director" > 
+    </div>
+    <div class="group">
+      <label>Genre</label>
+      <input type="text" name="Genre" [(ngModel)]="performance.Genre" >
+    </div>
+    <div class="mybutton">
+        <button class="mybutton"  type="submit" (click)="CreatePerformance()">Add</button>
+    </div>
+  </form>
+</div>

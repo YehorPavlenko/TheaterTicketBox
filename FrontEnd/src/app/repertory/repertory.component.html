@@ -1,0 +1,27 @@
+<app-nav-bar></app-nav-bar>
+
+<div class="container">
+  <div >
+    <button class="MyBtn"  *ngIf="role" type="button" [routerLink]="[ '/add-perfromance']">Add performance</button>
+  </div>
+<div *ngFor="let p of performances">
+     <div class="row"  >
+            <div class="col-6"> 
+              <img class="card-img-top"  src="{{p.PhotoPath}}" alt="Card image cap">
+            </div>
+              <div class="card-body">
+                <div class="col-6">
+                    <h1 class="card-title">{{p.Name}}</h1>
+                    <p class="card-text black">Author: <span class="inner-text">{{p.Author}}</span></p>
+                    <p class="card-text black">Director:<span class="inner-text" >{{p.Director}}</span></p>
+                    <p class="card-text black">Genre:<span class="inner-text" >{{p.Genre}}</span></p>    
+                    <button  *ngIf="role" type="submit" (click)="RemovePerformance(p.Id)">Remove performance</button>
+                    <input style="display: none" type="file" (change)="LoadPhoto($event)" #fileInput>
+                    <br> <button *ngIf="!p.PhotoPath" type="button" (click)="fileInput.click()">Add photo</button>
+                    <button *ngIf="!p.PhotoPath" type="button" (click)="onUpload(p.Id)">Upload</button>
+                  <div class="col-6">
+               </div>
+              </div>
+          </div>
+        </div>
+        </div>

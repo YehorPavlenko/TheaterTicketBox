@@ -1,0 +1,28 @@
+<app-nav-bar></app-nav-bar>
+<div class="container">
+  <div >
+    <button class="MyBtn"  *ngIf="role" type="button" [routerLink]="[ '/add-session']"  >Add session</button>
+  </div>
+  <div *ngFor="let s of sessions">
+      <div class="row"  >
+        <div class="col-2">
+          <div class="date">{{s.Date}}</div>
+          <div class="btntick">
+          <button class="MyBtn" (click)="BuyTicket(s)">Buy\Book a ticket</button>
+        </div>
+         </div>
+             <div class="col-5"> 
+               <img class="card-img-top"  src="{{s.Performance.PhotoPath}}" alt="Card image cap">
+             </div>
+               <div class="card-body">
+                 <div class="col-6">
+                     <h1 class="card-title">{{s.Performance.Name}}</h1>
+                     <p class="card-text black">Author: <span class="inner-text">{{s.Performance.Author}}</span></p>
+                     <p class="card-text black">Director:<span class="inner-text" >{{s.Performance.Director}}</span></p>
+                     <p class="card-text black">Genre:<span class="inner-text" >{{s.Performance.Genre}}</span></p>    
+                     <button  *ngIf="role" type="submit" (click)="RemoveSession(s.Id)">Remove session</button>
+               </div>
+           </div>
+         </div>
+      </div>
+</div>

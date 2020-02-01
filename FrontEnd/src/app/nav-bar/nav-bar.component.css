@@ -1,0 +1,41 @@
+.nav-tab{
+    color:white;
+    font-size: 30px;
+    padding : 15px;
+    cursor:pointer;
+}
+
+.Container{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+.nav-text
+{
+    margin-left: 27%;
+}
+.navbar 
+{
+    font-size: 30xp;
+    background-color: blueviolet;
+    height: 30%;
+    
+}
+nav
+{
+    color:white;
+}
+.logout
+{
+    position: absolute;
+    top:9%;
+    right: 5%;
+    font-size: 30px;
+    cursor:pointer;
+}
+
+.nav-logout a:hover{
+    text-decoration: underline;
+}
+

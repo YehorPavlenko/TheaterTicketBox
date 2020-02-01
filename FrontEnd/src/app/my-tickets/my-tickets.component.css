@@ -1,0 +1,9 @@
+tr{
+    font-size: 20px;
+}
+table{
+    width:500px;
+    border: 2px solid black;
+    margin: 1.5%;
+    background-color:yellow;
+}

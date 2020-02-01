@@ -1,0 +1,40 @@
+
+
+.col 
+{
+    background:white;
+    border: 2px solid black;
+    margin: 0.15%;
+    padding: 0%;
+    cursor: pointer;
+}
+
+.number
+{
+    padding: 0%;
+    margin: 0%;
+    height: 100%;
+    width: 100%;
+}
+
+.container
+{
+    margin-top: 20px;
+}
+
+h1{
+    text-align: center;
+}
+
+.MyBtn
+{
+    margin-right: 3%;
+    margin-left: 3%
+}
+
+.mybutton
+{
+    text-align: center;
+    margin: auto;
+    cursor:pointer;
+}
